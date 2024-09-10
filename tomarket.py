@@ -309,10 +309,7 @@ def print_welcome_message():
  |  _  /|  _ <   _   | | | | | '_ \| |/ _ \| '__|
  | | \ \| |_) | | |__| | |_| | | | | | (_) | |   
  |_|  \_\____/   \____/ \__,_|_| |_|_|\___/|_|   
-                                                 
-                                                 
-     
-        
+ 
           """)
     print(Fore.GREEN + Style.BRIGHT + "Tomarket BOT (@RB_Junior)")
     
