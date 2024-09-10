@@ -276,7 +276,7 @@ def main():
                         else:
                             print(f"{Fore.GREEN+Style.BRIGHT}[ Game ]: Game Started! {Style.RESET_ALL}                      ", flush=True)
                             for _ in range(30):
-                                print(f"{random.choice([Fore.RED, Fore.GREEN, Fore.YELLOW, Fore.BLUE, Fore.MAGENTA, Fore.CYAN, Fore.WHITE])+Style.BRIGHT}[ Game ]: Playing game, time remaining {30 - _} giây {Style.RESET_ALL}", end="\r", flush=True)
+                                print(f"{random.choice([Fore.RED, Fore.GREEN, Fore.YELLOW, Fore.BLUE, Fore.MAGENTA, Fore.CYAN, Fore.WHITE])+Style.BRIGHT}[ Game ]: Playing game, time remaining {30 - _} second {Style.RESET_ALL}", end="\r", flush=True)
                                 time.sleep(1)
                             print(f"{Fore.YELLOW+Style.BRIGHT}[ Game ]: Game ended! Claiming..                                       ", end="\r", flush=True)
                             point = random.randint(400, 600)
@@ -290,7 +290,7 @@ def main():
             print(Fore.BLUE + Style.BRIGHT + f"\n==========ALL ACCOUNTS HAVE BEEN PROCESSED==========\n",  flush=True)    
             for _ in range(1800):
                 minutes, seconds = divmod(1800 - _, 60)
-                print(f"{random.choice([Fore.RED, Fore.GREEN, Fore.YELLOW, Fore.BLUE, Fore.MAGENTA, Fore.CYAN, Fore.WHITE])+Style.BRIGHT}==== [ All accounts have been processed, next in  {minutes} minutes {seconds} giây ] ===={Style.RESET_ALL}", end="\r", flush=True)
+                print(f"{random.choice([Fore.RED, Fore.GREEN, Fore.YELLOW, Fore.BLUE, Fore.MAGENTA, Fore.CYAN, Fore.WHITE])+Style.BRIGHT}==== [ All accounts have been processed, next in  {minutes} minutes {seconds} second ] ===={Style.RESET_ALL}", end="\r", flush=True)
                 time.sleep(1)         
         except Exception as e:
             time.sleep(5)
@@ -317,7 +317,7 @@ def print_welcome_message():
     days, remainder = divmod(up_time.total_seconds(), 86400)
     hours, remainder = divmod(remainder, 3600)
     minutes, seconds = divmod(remainder, 60)
-    print(Fore.CYAN + Style.BRIGHT + f"Up time bot: {int(days)} days, {int(hours)} Hours, {int(minutes)} minutes, {int(seconds)} giây\n\n")
+    print(Fore.CYAN + Style.BRIGHT + f"Up time bot: {int(days)} days, {int(hours)} Hours, {int(minutes)} minutes, {int(seconds)} second\n\n")
 
 
 
